@@ -1,0 +1,17 @@
+{
+  "name": "O2 Signal",
+  "description": "Signal Strength Meter",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Telefonica PDI UK",
+    "url": "http://thelab.o2.com"
+  },
+  "permissions": [
+    "power",
+    "mobileconnection"
+  ],
+  "icons": {
+    "60": "/style/icons/signal.png"
+  },
+  "orientation": "landscape-primary"
+}
