@@ -6,6 +6,7 @@ function requestData() {
 }
   
 $(document).ready(function() {
+  var title = 'Signal Strength from ' + signal.network.shortName;
   chart = new Highcharts.Chart({
     chart: {
       renderTo: 'container',
@@ -15,12 +16,13 @@ $(document).ready(function() {
       }
     },
     title: {
-          text: 'Signal Strength'
+          text: title
         },
     xAxis: {
       type: 'datetime',
-      tickPixelInterval: 150,
-      maxZoom: 20 * 1000
+      tickPixelInterval: 500,
+      maxZoom: 20 * 100,
+      margin: 20
     },
     yAxis: {
       minPadding: 0.2,
